@@ -43,7 +43,7 @@ subxt-macro = { version = "0.24.0", path = "../macro" }
 subxt-metadata = { version = "0.24.0", path = "../metadata" }
 
 sp-core = { git = "https://github.com/Analog-Labs/substrate.git", default-features = false  }
-sp-runtime = "6.0.0"
+sp-runtime = { git = "https://github.com/Analog-Labs/substrate.git", default-features = false  }
 
 frame-metadata = "15.0.0"
 derivative = "2.2.0"
