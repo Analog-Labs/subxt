@@ -5,12 +5,12 @@ edition = "2021"
 
 [dependencies]
 subxt = { path = "../../subxt" }
-sp-runtime = {version = "6.0.0", git = "https://github.com/analog-labs/substrate.git", default-features = false, features = ["std"], branch = "enable-default-keystoreparams"}
+sp-runtime = { git = "https://github.com/paritytech/substrate.git", default-features = false, features = ["std"], branch = "polkadot-v0.9.30"}
 codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = ["derive", "full", "bit-vec"] }
 
 [build-dependencies]
 subxt = { path = "../../subxt" }
-sp-core = { version = "6.0.0", git = "https://github.com/analog-labs/substrate.git", default-features = false, branch = "enable-default-keystoreparams"}
+sp-core = { git = "https://github.com/paritytech/substrate.git", features = ["std"], branch = "polkadot-v0.9.30"}
 tokio = { version = "1.8", features = ["macros", "rt-multi-thread"] }
 which = "4.2.2"
 jsonrpsee = { version = "0.15.1", features = ["async-client", "client-ws-transport"] }
