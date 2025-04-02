@@ -216,7 +216,7 @@ impl<T: Config> TransactionExtension<T> for CheckNonce {
 
 /// Configure the nonce used.
 #[derive(Debug, Clone, Default)]
-pub struct CheckNonceParams(Option<u64>);
+pub struct CheckNonceParams(pub Option<u64>);
 
 impl CheckNonceParams {
     /// Retrieve the nonce from the chain and use that.
